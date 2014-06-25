@@ -9,15 +9,15 @@ p{
 a{
 	font-size: 1.5em;
 }
-/*nav{
-	background-color: #A5A5A5;
-	color:#A5A5A5;
-}*/
+h1, h2, h3{
+	color:#333333;
+}
 ul > li{
 	color:white;
 }
 li{
 	color:#333333;
+	list-style-type: none;
 }
 p{
 	margin-left: 3px;
@@ -46,16 +46,24 @@ img:hover{
 }
 .navbar-default{
 	background-color: #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
 }
 .btn{
 	padding:5px;
 }
-.btn:hover{
+/*.btn:hover{
+	background-color:#333333;
+	color:white;
+}*/
+.inverse{
 	background-color:#333333;
 	color:white;
 }
 .filter{
 	margin-left:5px;
+}
+.square{
+	clear: both;
 }
 
 /*YOUTUBE VIDEO WRAPPER FROM github/jgarber*/
