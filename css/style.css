@@ -5,8 +5,17 @@ body{
 }
 p{
 	color:#333333;	
+	margin-left: 3px;
 }
 a{
+	color: white;
+	text-decoration: none;
+	font-size: 1.0em;
+}
+a:hover{
+	color:#333333;
+}
+.nav-link {
 	font-size: 1.5em;
 }
 h1, h2, h3{
@@ -18,9 +27,6 @@ ul > li{
 li{
 	color:#333333;
 	list-style-type: none;
-}
-p{
-	margin-left: 3px;
 }
 .center{
 	float: none;
@@ -51,10 +57,6 @@ img:hover{
 .btn{
 	padding:5px;
 }
-/*.btn:hover{
-	background-color:#333333;
-	color:white;
-}*/
 .inverse{
 	background-color:#333333;
 	color:white;
@@ -65,7 +67,9 @@ img:hover{
 .square{
 	clear: both;
 }
-
+.content{
+	display: none;
+}
 /*YOUTUBE VIDEO WRAPPER FROM github/jgarber*/
 .flex-video {
   position: relative;
@@ -90,4 +94,7 @@ img:hover{
 }
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
   .flex-video { padding-top: 0; }
+}
+.flex-audio{
+	height:400px;
 }
