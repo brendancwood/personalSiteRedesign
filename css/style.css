@@ -1,31 +1,34 @@
 body{
 	padding-top:60px;
-	background-color: #E6E6E6;
+	background-color: #34556A;
 	color:#A5A5A5;
+	font-family: "Trebuchet MS", arial, helvetica, sans-serif;
 }
 p{
-	color:#333333;	
+	color:#14486A;	
 	margin-left: 3px;
+	font-family: "Trebuchet MS", arial, helvetica, sans-serif;
 }
 a{
 	color: white;
-	text-decoration: none;
+	
 	font-size: 1.0em;
 }
 a:hover{
-	color:#333333;
+	color:white;
+	text-decoration: underline;
 }
 .nav-link {
 	font-size: 1.5em;
 }
 h1, h2, h3{
-	color:#333333;
+	color:#14486A;
 }
 ul > li{
 	color:white;
 }
 li{
-	color:#333333;
+	color:#14486A;
 	list-style-type: none;
 }
 .center{
@@ -36,12 +39,27 @@ li{
 .navbar-brand{
 	font-size: 2em;
 }
+
 img{
 	padding-left: 5px;
 }
-img:hover{
+/*.box img:hover{
 	opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+    filter: alpha(opacity=60);
+}*/
+.square .box-hover{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	background-color: #34556A;
+	left:6.25%;
+	border-radius: 6px;
+}
+.box-hover p{
+	color: white;
+	top:40%;
+	position:relative;
+	text-align: center;
 }
 .row{
 	margin-top:15px;
@@ -51,14 +69,14 @@ img:hover{
 	background-color: #A5A5A5;
 }
 .navbar-default{
-	background-color: #E6E6E6;
-	border-bottom: 1px solid #E6E6E6;
+	background-color: #34556A;
+	border-bottom: 1px solid #34556A;
 }
 .btn{
 	padding:5px;
 }
 .inverse{
-	background-color:#333333;
+	background-color:#14486A;
 	color:white;
 }
 .filter{
@@ -99,6 +117,9 @@ img:hover{
 .flex-audio{
 	height:400px;
 }
+.multiSounds{
+	background-color: #A5A5A5;
+}
 .copyright{
 	font-size:1.2em;
 	top:0;
@@ -112,4 +133,29 @@ img:hover{
 }
 i:hover{
 	color:white;
+}
+.img-responsive{
+	border-radius: 10px;
+}
+.selfie{
+	border-radius: 10px;
+}
+.selfie img:hover{
+	opacity: 1.0;
+}
+
+@media (max-width: 990px){
+	.square .box-hover{
+		left:8%;
+	}
+}
+@media (max-width: 767px){
+	.square .box-hover{
+		left:5.4%;
+	}
+}
+@media (max-width: 530px){
+	.square .box-hover{
+		left:7.5%;
+	}
 }
