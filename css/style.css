@@ -21,6 +21,15 @@ a:hover{
 .nav-link {
 	font-size: 1.5em;
 }
+.highlight{
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.highlight:hover{
+  background-color: #FFffff;
+  color: #009999;
+}
 h1, h2, h3{
 	color:#14486A;
 }
@@ -43,17 +52,15 @@ li{
 img{
 	padding-left: 5px;
 }
-/*.box img:hover{
-	opacity: 0.6;
-    filter: alpha(opacity=60);
-}*/
+.launchgame:hover{
+	color: #34556A;
+}
 .square .box-hover{
 	opacity: 0;
 	position: absolute;
 	top: 0;
 	background-color: #34556A;
 	left:6.25%;
-	border-radius: 6px;
 }
 .box-hover p{
 	color: white;
@@ -135,7 +142,7 @@ i:hover{
 	color:white;
 }
 .img-responsive{
-	border-radius: 10px;
+
 }
 .selfie{
 	border-radius: 10px;
@@ -158,4 +165,48 @@ i:hover{
 	.square .box-hover{
 		left:7.5%;
 	}
+}
+.btn{
+	background-color:none;
+	color:white;
+}
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
 }

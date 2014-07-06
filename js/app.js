@@ -73,8 +73,13 @@ var boxHoverOut = function(){
 	var gauntlet_box = 	$('<div class="square audio" data-type="gauntlet"><a href="#/gauntlet"><img class="img-responsive" src="images/GauntletThumb.jpg" /></a><div class="box-hover"><p>Gauntlet Animation</p></div></div>');
 	var bent_on_control_box =	$('<div class="square audio" data-type="bent_on_control"><a href="#/bent_on_control"><img class="img-responsive" src="images/BOCThumb.jpg" /></a><div class="box-hover"><p>Bent On Control CD</p></div></div>');
 
+	var ck_box = $('<div class="square dev" data-type="ck_website"><a href="#/ck"><img class="img-responsive" src="images/ckThumb.png" /></a><div class="box-hover"><p>Counting Kingdom - Website</p></div></div>');
+	var feedme_box = $('<div class="square dev" data-type="feedme"><a href="#/feedme"><img class="img-responsive" src="images/feedmeThumb.png" /></a><div class="box-hover"><p>Feed.me - Website</p></div></div>');
+	var risenfall_box = $('<div class="square dev game" data-type="risenfall"><a href="#/risenfall"><img class="img-responsive" src="images/risenfallThumb.png" /></a><div class="box-hover"><p>Rise and Fall - Web Game</p></div></div>');
+	var datavis_box = $('<div class="square dev" data-type="datavis"><a href="#/datavis"><img class="img-responsive" src="images/datavisThumb.png" /></a><div class="box-hover"><p>Datavis - Website</p></div></div>');
+
 	//Start with DEV work
-	var displayBox = [soundrift_box,warpshooter_box,zeke_in_orbit_box,pure_data_box];
+	var displayBox = [ck_box, risenfall_box, datavis_box, feedme_box, soundrift_box, warpshooter_box, zeke_in_orbit_box, pure_data_box];
 		for(var i=0; i<displayBox.length; i++){
 			$('.box-slot-' + i).append(displayBox[i]);
 			
@@ -100,7 +105,7 @@ var boxHoverOut = function(){
 			displayBox = [];
 			$('.square').detach();
 			//add projects to dev filter
-			displayBox.push(soundrift_box,warpshooter_box,zeke_in_orbit_box,pure_data_box);
+			displayBox.push(ck_box, risenfall_box, datavis_box, feedme_box, soundrift_box,warpshooter_box,zeke_in_orbit_box,pure_data_box);
 
 				$.each(displayBox, function(i, value){
 					$('.box-slot-' + i).append(displayBox[i]);
@@ -110,11 +115,11 @@ var boxHoverOut = function(){
 		});
 		//GAME FILTER
 		$('button.games').on('click', function(){
-			if(!$('button.game').hasClass('active')){
+			if(!$('button.games').hasClass('active')){
 			displayBox = [];
 			$('.square').detach();
 			//add projects to dev filter
-			displayBox.push(soundrift_box,warpshooter_box,zeke_in_orbit_box);
+			displayBox.push(soundrift_box,warpshooter_box,risenfall_box,zeke_in_orbit_box);
 
 				$.each(displayBox, function(i, value){
 					$('.box-slot-' + i).append(displayBox[i]);

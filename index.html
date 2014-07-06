@@ -24,9 +24,9 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav navbar-right">
-			        <li><a class="nav-link portfolio" href="#">Portfolio</a></li>
-			        <li><a class="nav-link" href="http://blog.brendancwood.com" target="new">Blog</a></li>
-			        <li><a class="nav-link about" href="#" target="new">About</a></li>
+			        <li><a class="nav-link portfolio highlight" href="#">Portfolio</a></li>
+			        <li><a class="nav-link highlight" href="http://blog.brendancwood.com" target="new">Blog</a></li>
+			        <li><a class="nav-link about highlight" href="#">About</a></li>
 			      </ul>
 			  </div>
 			</div>
@@ -36,9 +36,9 @@
 <div class="container box myContainer">
 	<div class="row">
 		<div class="col-lg-4 col-xs-12 filter">
-			<button class="btn btn-default dev active">Development</button>
-			<button class="btn btn-default games">Games</button>
-			<button class="btn btn-default audio">Audio</button>
+			<button class="btn fa fa-code fa-3x dev active"></button>
+			<button class="btn fa fa-gamepad fa-3x games"></button>
+			<button class="btn fa fa-headphones fa-3x audio"></button>
 		</div>
 	</div>
 		<div class="row">
@@ -119,19 +119,24 @@
 <!-- About Me -->
 <div class="container content me">
 	<div class="row">
-		<div class="col-lg-12 col-md-12 center">
-			<center><img class="selfie" src="images/me.jpg" /></center>
+		<div class="col-lg-4 col-md-4">
+			<center><img class="selfie" src="images/me.jpg" height="250" width="200"/></center>
+		</div>
+		<div class="col-lg-8 col-md-8">
+			<p>My name is Brendan and I'm obsessed with creating something from nothing. Developing clean, dynamic experiences that help people think, create, and do more is my passion.</p>
+			<p>This curiousity led me
+				down many paths until I figured out what kind of builder I'd like to be: a developer!
+				I studied new media design in college and ended up making two video games while studying audio for interactive media.  I moved out to the San Francisco Bay Area and worked as a video game sound designer,  contributing to many published console and mobile titles, but all along there was something missing.  I realized that I'd like to do more than just video games and left to pursue a career in web development.  This field is personally more satisfying as it has the potential to affect people's
+				lives everyday while still allowing me the creative freedom of programming and designing interactive applications.</p>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-lg-12 col-md-12">
-			
-		</div>
 	</div>
 </div>
 
 <!-- Alien Rage -->
 <div class="container content alien_rage">
+	<h1>Alien Rage - PC, Xbox 360</h1>
 	<div class="row">
 		<div class="flex-video">
 			<iframe class="col-lg-12 col-md-3 col-xs-12" src="http://www.youtube.com/embed/UPhXN4a1O_g" frameborder="0" allowfullscreen></iframe>
@@ -155,6 +160,7 @@
 
 <!-- WARPSHOOTER -->
 <div class="container content warpshooter">
+	<h1>Warpshooter - Xbox 360</h1>
 	<div class="row">
 		<div class="flex-video">
 			<iframe class="col-lg-12 col-md-3 col-xs-12" src="http://www.youtube.com/embed/Ep6PUBcc0xk" frameborder="0" allowfullscreen></iframe>
@@ -197,6 +203,7 @@
 </div>
 <!-- GAUNTLET ANIMATION -->
 <div class="container content gauntlet">
+	<h1>The Gauntlet</h1>
 	<div class="row">
 		<div class="flex-video">
 			<iframe class="col-lg-12 col-md-3 col-xs-12" src="http://www.youtube.com/embed/plG7AXl-vRY" frameborder="0" allowfullscreen></iframe>
@@ -215,8 +222,94 @@
 		</div>
 	</div>
 </div>
+<!-- CK Website -->
+<div class="container content ck_website">
+	<h1>CK Website Mockup</h1>
+	<div class="row">
+		<center><a href="/ck_website/index.html" target="_blank"><img src="images/ckIcon.png"></a></center>
+		<center><a href="/ck_website/index.html" target="_blank">Click to launch website</a>
+	</div>
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<li><u>Technologies:</u></li>
+			<li>-HTML/CSS</li>
+			<li>-Bootstrap</li>
+			<li>-Javascript/jQuery</li>
+			<br />
+			<p> A friend asked me to mockup a website for their video game so I created this website from scratch. The game is still in development and is slated
+				to release on iPad late 2014.</p>
+		</div>
+	</div>
+</div>
+<!-- Feedme -->
+<div class="container content feedme">
+	<h1>Feed.me Website</h1>
+	<div class="row">
+		<center><a href="/feedme/index.html" target="_blank"><img src="images/feedme_icons.png"></a></center>
+		<center><a href="/feedme/index.html" target="_blank">Click Here to launch website</a></center>
+	</div>
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<li><u>Technologies:</u></li>
+			<li>Firebase database</li>
+			<li>HTML5 local storage</li>
+			<li>HTML/CSS</li>
+			<li>Bootstrap</li>
+			<li>javascript/jQuery</li>
+			<br />
+			<p> First project at coding house to create a basic restaurant ordering app which allows a customer to submit orders to a database and receive order history. I integrated HTML5 local storage initially but then I discovered firebase so I went back and integrated its real-time nature into the project. I was also responsible for all front-end logic.</p>
+		</div>
+	</div>
+</div>
+<!-- datavis -->
+<div class="container content datavis">
+	<h1>Datavis - Website</h1>
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<center><a href="/datavis/index.html" target="_blank"><img class="img-responsive" src="images/datavis_stats.png"></a></center>
+			<center><a href="/datavis/index.html" target="_blank">Click to Launch the website</a>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<li><u>Technologies:</u></li>
+			<li>Firebase database</li>
+			<li>Firebase simple login + sessions</li>
+			<li>Chart.js for data visualization</li>
+			<li>HTML/CSS</li>
+			<li>Bootstrap</li>
+			<li>Javascript/jQuery</li>
+			<br />
+
+		</div>
+			<p> One of our tasks while at coding house is keep up our social media interactions. This means sharing interesting tweets, blogging, finding interesting projects on github, connecting with people on linkedIn, and answering questions on Quora and stackOverflow. In order to track all of this we created a project that would allow us to submit all of our social interactions at the end of the day and then visualize it for easier understanding. I've created a guest account you can use to login.<a href="/datavis/index.html" target="_blank">Click Here to launch website.</a> Email: guest@guest.com Password: guestpassword</p>
+		</div>
+	</div>
+</div>
+<!-- risenfall -->
+<div class="container content risenfall">
+	<h1>Rise n Fall - Web Game</h1>
+	<div class="row">
+		<center><a href="/risenfall/index.html" target="_blank"><i class="fa fa-gamepad fa-4x launchgame"></i></a></center>
+		<center><a href="/risenfall/index.html" target="_blank">Launch Rise n Fall</a></center>
+	</div>
+	<div class="row">
+		<div class="col-lg-12 col-md-12">
+			<li><u>Technologies:</u></li>
+			<li>HTML/CSS</li>
+			<li>Bootstrap</li>
+			<li>jQuery</li>
+			<br />
+			<p> Simple game I created to teach myself more about using jQuery's animate behavior. You must hover over the colored boxes in order to get all of them across
+				the line on the right. Once they have crossed the line you must be quick and click on the DONE! button to win. I came up with the idea before going to bed
+				and implemented it in a quick programming session of a couple hours. It's addicting, stupid, and hopefully fun. Enjoy.</p>
+		</div>
+	</div>
+</div>
 <!-- ZEKE IN ORBIT -->
 <div class="container content zeke_in_orbit">
+	<h1>Zeke in Orbit - iOS</h1>
 	<div class="row">
 		<div class="flex-video">
 			<iframe class="col-lg-12 col-md-3 col-xs-12" src="http://www.youtube.com/embed/5Yfc9GxJ0qo" frameborder="0" allowfullscreen></iframe>
@@ -245,6 +338,7 @@
 </div>
 <!-- PURE DATA -->
 <div class="container content pure_data">
+	<h1>Arduino Computing</h1>
 	<div class="row">
 		<div class="flex-video">
 			<iframe class="col-lg-12 col-md-3 col-xs-12" src="http://www.youtube.com/embed/652KgEPpwsE" frameborder="0" allowfullscreen></iframe>
@@ -267,6 +361,7 @@
 </div>
 <!-- Halo 4 -->
 <div class="container content halo_4">
+	<h1>Halo 4 Audio Reskin</h1>
 	<div class="row">
 		<div class="flex-video">
 			<iframe class="col-lg-12 col-md-3 col-xs-12" src="http://www.youtube.com/embed/v7NS4ai7yrs" frameborder="0" allowfullscreen></iframe>
@@ -288,6 +383,7 @@
 
 <!-- Golden Arrow -->
 <div class="container content golden_arrow">
+	<h1>The Golden Arrow - iOS</h1>
 	<div class="row">
 		<div class="flex-video">
 			<iframe class="col-lg-12 col-md-3 col-xs-12" src="http://www.youtube.com/embed/UO8E8aPMY4g" frameborder="0" allowfullscreen></iframe>
@@ -315,6 +411,7 @@
 </div>
 <!-- Digital Device Sounds -->
 <div class="container content digital_device">
+	<h1>Digital Device Sounds</h1>
 	<div class="row">
 		<div class="flex-audio">
 			<iframe width="100%" height="100%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F6676871"></iframe>
@@ -336,6 +433,7 @@
 </div>
 <!-- Bent On Control -->
 <div class="container content bent_on_control">
+	<h1>Bent on Control CD</h1>
 	<div class="row">
 		<div class="flex-audio">
 			<iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F3463595"></iframe>
@@ -358,6 +456,7 @@
 </div>
 <!-- BUBBLE GRUBBLE -->
 <div class="container content bubble_grubble">
+	<h1>Bubble Grubble - iOS</h1>
 	<div class="row">
 		<div class="flex-video">
 			<iframe class="col-lg-12 col-md-3 col-xs-12" src="http://www.youtube.com/embed/DpLLFOOabMY" frameborder="0" allowfullscreen></iframe>
@@ -377,6 +476,7 @@
 </div>
 <!-- SOUNDRIFT -->
 <div class="container content soundrift">
+	<h1>SounDrift - iOS</h1>
 	<div class="row">
 		<div class="flex-video">
 			<iframe class="col-lg-12 col-md-3 col-xs-12" src="http://www.youtube.com/embed/ofdHOvA5jvM" frameborder="0" allowfullscreen></iframe>
