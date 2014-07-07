@@ -89,8 +89,8 @@ img{
 .filter{
 	margin-left:5px;
 }
-.square{
-	clear: both;
+.img-responsive{
+	margin-bottom:15px;
 }
 .content{
 	display: none;

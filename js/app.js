@@ -29,7 +29,7 @@ var reloadPortfolio = function(){
 	$('.portfolio').on('click', function(){
 		$('.content').slideUp(400, function(){
 			$('.box').slideDown(400, function(){
-				$('.footer').show();
+				$('.footer').slideDown(300);
 			});
 		});
 	});
